@@ -1,15 +1,3 @@
-"""
-checklinces = get the information by a license
-checkuser = get the information by a user
-
-delete license 
-create license
-edit license
-
-regenerate license
-license/user list
-"""
-
 data_base = ""
 table = "orbit_licenses"
 
