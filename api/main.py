@@ -1,6 +1,3 @@
-data_base = ""
-table = "orbit_licenses"
-
 from flask import Flask, jsonify, request
 from flask_mysqldb import MySQL
 
