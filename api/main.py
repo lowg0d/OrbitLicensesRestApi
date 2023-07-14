@@ -6,6 +6,15 @@ from config import config
 app = Flask(__name__)
 mysql_connection = MySQL(app)
 
+@app.route("/online", methods=['GET'])
+def show_license_list():
+    try:
+        return jsonify({'online': True})
+    
+    except Exception as e:
+        print("[ERROR]: " + str(e))
+        return jsonify({'error': "check_console"})
+
 @app.route("/license_list", methods=['GET'])
 def show_license_list():
     try:
