@@ -7,7 +7,7 @@ app = Flask(__name__)
 mysql_connection = MySQL(app)
 
 @app.route("/online", methods=['GET'])
-def show_license_list():
+def is_online():
     try:
         return jsonify({'online': True})
     
